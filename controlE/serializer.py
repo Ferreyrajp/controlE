@@ -4,7 +4,7 @@ from .models import Clientes,Empleados,Reparaciones,Asignaciones
 class ClientesSerializers(serializers.ModelSerializer):
     class Meta:
         model = Clientes
-        fileds = '__all__'
+        fields = '__all__'
 
 class EmpleadosSerializers(serializers.ModelSerializer):
     class Meta:
