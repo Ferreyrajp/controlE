@@ -26,6 +26,7 @@ class Reparaciones(models.Model):
     descripcion = models.CharField(max_length=200)
     fecha_recepcion = models.DateTimeField(auto_now_add=True)
     estado = models.CharField(max_length=50)
+    Valor = models.FloatField()
 
     def __str__(self):
         return f"Reparaciones ID: {self.pk}, Clientes Nombre: {self.cliente_id.nombre}"
